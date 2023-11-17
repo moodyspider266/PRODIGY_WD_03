@@ -1,0 +1,148 @@
+nav {
+    background-color: rgb(59, 29, 88);
+    height: 80px;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Almarai', sans-serif;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.gameContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: rgb(187, 154, 221);
+    color: white;
+}
+
+.gameInfo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.gameInfo h1 {
+    font-size: 3rem;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.btop-0 {
+    border-top: 0;
+}
+
+.bBottom-0 {
+    border-bottom: 0;
+}
+
+.info {
+    font-size: 1.3rem;
+    color: rgb(252, 225, 76);
+}
+
+#reset {
+    margin: 23px;
+    padding: 6px 10px;
+    font-size: 20px;
+    background-color: rgb(59, 29, 88);
+    color: white;
+    border-radius: 8px;
+    border: 2px solid rgb(59, 29, 88);
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: rgb(155, 93, 216);
+    color: rgb(59, 29, 88);
+    border: 2px solid rgb(155, 93, 216);
+}
+
+body {
+    background-color: rgb(170, 138, 202);
+}
+
+
+@media (max-width: 850px) {
+    .gameInfo {
+        padding-top: 50px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 615px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 15vw);
+        grid-template-rows: repeat(3, 15vw);
+    }
+}
+
+@media (max-width: 295px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+    }
+}
+
+@media (max-height: 667px) {
+    .gameInfo {
+        padding-top: 18px;
+    }
+}
+
+@media (max-height: 720px) {
+    .gameContainer {
+        padding-top: 0px;
+        margin-top: 50px;
+    }
+}
